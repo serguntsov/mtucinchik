@@ -5,7 +5,6 @@ import random
 
 bot = telebot.TeleBot("YOUR TOKEN")
 
-
 def start_markup():
     markup = types.InlineKeyboardMarkup(row_width=True)
     link_keyboard = types.InlineKeyboardButton(text="Подписаться", url="https://t.me/mtucinchik")
