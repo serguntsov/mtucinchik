@@ -3,7 +3,7 @@ from telebot import types
 import sqlite3
 import random
 
-bot = telebot.TeleBot("6044332888:AAGmbmf2L8yVqdXbOvrJojLpflqzfuELtG4")
+bot = telebot.TeleBot("YOUR TOKEN")
 
 
 def start_markup():
