@@ -210,7 +210,7 @@ def start(message):
 @bot.message_handler(commands=['admin'])
 def admin(message):
     if bot.get_chat_member(chat_id='-1001720626187', user_id=message.chat.id).status == 'administrator' or 'creator':
-        bot.send_message(message.chat.id, "Приветсвую, повелитель мтусинчика!", reply_markup=admin_markup())
+        bot.send_message(message.chat.id, "Приветсвую, администратор мтусинчика!", reply_markup=admin_markup())
     else:
         bot.send_message(message.chat.id, "У вас нет прав администратора")
         
