@@ -959,7 +959,7 @@ def anketa_list(call):
                 print("result_list2: ", result_list)
                 anketa_p(chat_id, result_list)
             elif data_1 == "Все равно":
-                cursor.execute(f"SELECT id FROM sex_id WHERE id != ?", (chat_id))
+                cursor.execute(f"SELECT id FROM sex_id WHERE id != {call.message.chat.id} ")
                 result_list = [item[0] for item in cursor.fetchall()]
                 random.shuffle(result_list)
                 print("result_list3: ", result_list)
